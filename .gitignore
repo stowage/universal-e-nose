@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Data and Models
+data/*.json
+data/*.csv
+models/*.pkl
+models/*.joblib
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Arduino
+arduino/**/build/
+arduino/**/build_*/
