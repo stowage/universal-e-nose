@@ -1,0 +1,83 @@
+{
+    "sensor_mapping": {
+        "Sensor_1": {
+            "name": "ENS160_TVOC",
+            "type": "SEN0515",
+            "sensitivity": "TVOC, eCO2, AQI",
+            "interface": "I2C",
+            "purpose": "Primary VOC detection for perfumes and fruits"
+        },
+        "Sensor_2": {
+            "name": "SCD41_CO2",
+            "type": "SEN0536",
+            "sensitivity": "Carbon Dioxide (0-5000ppm)",
+            "interface": "I2C",
+            "purpose": "CO2 detection for fermentation, beverages, breath"
+        },
+        "Sensor_3": {
+            "name": "MEMS_Ethanol",
+            "type": "SEN0569",
+            "sensitivity": "Ethanol/Alcohol",
+            "interface": "Analog",
+            "purpose": "Alcohol detection for perfumes, beverages, fruits"
+        },
+        "Sensor_4": {
+            "name": "MEMS_NH3",
+            "type": "SEN0567",
+            "sensitivity": "Ammonia",
+            "interface": "Analog",
+            "purpose": "Ammonia detection for flowers, cleaning products"
+        },
+        "Sensor_5": {
+            "name": "MEMS_NO2",
+            "type": "SEN0574",
+            "sensitivity": "Nitrogen Dioxide",
+            "interface": "Analog",
+            "purpose": "NO2 detection for combustion, some perfumes"
+        },
+        "Sensor_6": {
+            "name": "Electro_CO",
+            "type": "SEN0466",
+            "sensitivity": "Carbon Monoxide",
+            "interface": "Analog",
+            "purpose": "CO detection for safety and combustion"
+        },
+        "Sensor_7": {
+            "name": "MEMS_H2",
+            "type": "SEN0572",
+            "sensitivity": "Hydrogen",
+            "interface": "Analog",
+            "purpose": "H2 detection for fruits, chemical processes"
+        },
+        "Sensor_8": {
+            "name": "MEMS_CH4",
+            "type": "SEN0565",
+            "sensitivity": "Methane",
+            "interface": "Analog",
+            "purpose": "Methane detection for natural gas, fermentation"
+        },
+        "Sensor_9": {
+            "name": "MEMS_Smoke",
+            "type": "SEN0570",
+            "sensitivity": "Smoke, Ethanol",
+            "interface": "Analog",
+            "purpose": "Smoke detection for tobacco, incense, fire"
+        },
+        "Sensor_10": {
+            "name": "MQ135",
+            "type": "MQ-135",
+            "sensitivity": "Air Quality (NH3, NOx, CO2, benzene, alcohol, smoke)",
+            "interface": "Analog",
+            "purpose": "Broad spectrum air quality backup"
+        },
+        "Sensor_11": {
+            "name": "MQ3",
+            "type": "MQ-3",
+            "sensitivity": "Alcohol, Benzene",
+            "interface": "Analog",
+            "purpose": "Additional alcohol/benzene sensitivity"
+        }
+    },
+    "notes": "Optimized sensor array for universal odor recognition",
+    "hardware_specific": true
+}

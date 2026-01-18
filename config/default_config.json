@@ -1,0 +1,50 @@
+{
+    "system": {
+        "name": "Universal Odor Recognition System",
+        "version": "2.1.0",
+        "mode": "universal"
+    },
+    "hardware": {
+        "n_sensors": 11,
+        "sensor_types": ["i2c", "i2c", "analog", "analog", "analog", "analog", "analog", "analog", "analog", "analog", "analog"],
+        "i2c_sensors": ["SEN0515", "SEN0536"],
+        "analog_sensors": ["SEN0569", "SEN0567", "SEN0574", "SEN0466", "SEN0572", "SEN0565", "SEN0570", "MQ-135", "MQ-3"],
+        "default_port": "COM3",
+        "baud_rate": 115200,
+        "sampling_rate_hz": 10
+    },
+    "data": {
+        "data_directory": "data/",
+        "model_directory": "models/",
+        "min_samples_per_item": 20,
+        "max_samples_per_item": 500
+    },
+    "processing": {
+        "feature_extraction": {
+            "use_universal_features": true,
+            "use_perfume_phases": true,
+            "use_general_features": true,
+            "adaptive_feature_selection": true
+        },
+        "signal_processing": {
+            "apply_baseline_correction": true,
+            "apply_smoothing": true,
+            "adaptive_smoothing": true
+        }
+    },
+    "model": {
+        "use_hierarchical_classification": true,
+        "category_threshold": 0.7,
+        "ensemble_weights": {
+            "perfume": [0.6, 0.25, 0.15],
+            "general": [0.5, 0.3, 0.2],
+            "universal": [0.4, 0.4, 0.2]
+        }
+    },
+    "recognition": {
+        "adaptive_duration": true,
+        "min_duration_seconds": 2.0,
+        "max_duration_seconds": 10.0,
+        "category_detection_threshold": 0.6
+    }
+}

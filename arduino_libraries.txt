@@ -1,0 +1,17 @@
+Arduino Libraries to Install:
+
+1. Adafruit SCD4x Library
+   - Search: "Adafruit SCD4x"
+   - By: Adafruit
+   - Version: Latest
+
+2. SparkFun ENS160 Arduino Library
+   - Search: "SparkFun ENS160"
+   - By: SparkFun
+   - Version: Latest
+
+Installation Instructions:
+1. Open Arduino IDE
+2. Go to Tools > Manage Libraries
+3. Search for each library name
+4. Click "Install" for the correct library
